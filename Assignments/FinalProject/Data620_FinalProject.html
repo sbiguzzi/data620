@@ -14302,7 +14302,7 @@ a.anchor-link {
 You should briefly describe your data sources; plan for doing the work, and up front concerns. If you are working in a group, please describe the roles and responsibilities of each group member. 
 We’ll treat this proposal as a planning document, not a blue print containing “firm, fixed requirements.”</p>
 <h3 id="Final-Project">Final Project<a class="anchor-link" href="#Final-Project">&#182;</a></h3><p>Your project should incorporate one or both of the two main themes of this course: network analysis and text processing. You need to show all of your work in a coherent workflow, and in a reproducible format, such as an IPython Notebook or an R Markdown document. If you are building a model or models, explain how you evaluate the “goodness” of the chosen model and parameters.</p>
-<h3 id="Final-Project-Presentation---YouTube-Link">Final Project Presentation - YouTube Link<a class="anchor-link" href="#Final-Project-Presentation---YouTube-Link">&#182;</a></h3><p>We’ll schedule a short presentation for each team, either in our last scheduled meet-up or in additional office hours to be scheduled during the last week of classes.</p>
+<h3 id="Final-Project-Presentation---YouTube-Link"><a href="https://www.youtube.com/watch?v=Fvci0OdYAh8">Final Project Presentation - YouTube Link</a><a class="anchor-link" href="#Final-Project-Presentation---YouTube-Link">&#182;</a></h3><p>We’ll schedule a short presentation for each team, either in our last scheduled meet-up or in additional office hours to be scheduled during the last week of classes.</p>
 <h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>We were inspired by a recent article in <a href="https://towardsdatascience.com/identifying-potential-scam-listings-on-airbnb-e9aed41611e5">Towards Data Science</a> (which was in turn inspired by a <a href="https://www.wired.co.uk/article/airbnb-scam-london">Wired</a> article) which demonstrated that network analysis could be used to detect fake reviewers of Airbnb stays. We took a different approach exploring a 2015 law mentioned in the article, “…which allows Londoners to let their home on a short-term basis without the need for planning permission, for up to 90 nights a year.” This law, while providing a great economic benefit for residents opens the door for potential abuse through “systematizing” a single listing by signing up for multiple accounts.</p>
 <p>Our project plans to demonstrate that network analysis through connection between guests and hosts can detect hosts who use multiple accounts for the same unit to skirt this law and rent out their space for more than 90 days. Other geographies could reapply this method to understand if systemization is an issue.</p>
 <p>The primary data source for this project us <a href="http://insideairbnb.com/get-the-data.html">Inside Airbnb</a>, a repository of publicly available data that is cleaned and aggregated for open use. The site contains many geographies to use. We have selected London because of this distinctive law that seemingly eases up on restrictions when other cities are cracking down. Additionally, London has many more listings than any other location initially reviewed, which improves our chances to find what we are looking for.</p>
@@ -14521,20 +14521,6 @@ We’ll treat this proposal as a planning document, not a blue print containing 
 </div>
 </div>
 
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[4]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># !pwd</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
@@ -14542,7 +14528,6 @@ We’ll treat this proposal as a planning document, not a blue print containing 
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># loading listing data</span>
-<span class="c1"># listing_url = </span>
 <span class="n">listing_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;listings.csv&#39;</span><span class="p">,</span><span class="n">dtype</span><span class="o">=</span><span class="nb">object</span><span class="p">)</span>
 <span class="n">listing_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;id&#39;</span><span class="p">:</span><span class="s1">&#39;listing_id&#39;</span><span class="p">},</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">listing_df</span><span class="o">.</span><span class="n">shape</span>
@@ -16246,12 +16231,6 @@ Max and Billie median review compound score: 0.8658
 <a href="https://github.com/sbiguzzi/data620/blob/main/Assignments/FinalProject/%5BData%20620%5D%20Final%20Project%20-%20Appendix%20C%20-%20Sydney.ipynb">Appendix C - Sydney</a> <br>
 <a href="https://github.com/sbiguzzi/data620/blob/main/Assignments/FinalProject/%5BData%20620%5D%20Final%20Project%20-%20Appendix%20D%20-%20Tokyo.ipynb">Appendix D - Tokyo</a><br>
 <a href="https://github.com/sbiguzzi/data620/blob/main/Assignments/FinalProject/%5BData%20620%5D%20Final%20Project%20-%20Appendix%20E%20-%20HK.ipynb">Appendix A - Hong Kong</a><br></p>
-
-</div>
-</div>
-<div class="jp-Cell-inputWrapper"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="Final-Presentation">Final Presentation<a class="anchor-link" href="#Final-Presentation">&#182;</a></h2><p><a href="link">YouTube Video</a></p>
 
 </div>
 </div>
